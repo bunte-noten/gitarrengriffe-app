@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitarrengriffe Hören Üben</title>
+
+    <meta name="apple-mobile-web-app-title" content="Akkorde hören">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Akkorde Hören Üben</h1>
+
+<div class="file-input-container">
+    <label for="jsonFileInput" class="file-input-label">Datei auswählen</label>
+    <input type="file" id="jsonFileInput" class="file-input" accept=".json">
+    <div id="fileName" class="file-name">
+        <span id="fileIcon">📄</span>
+        <span id="fileNameText"></span>
+    </div>
+</div>
+
+<div class="chord-selection">
+    <label><input type="checkbox" value="c"> C</label>
+    <label><input type="checkbox" value="cmaj7"> Cmaj7</label>
+    <label><input type="checkbox" value="d"> D</label>
+    <label><input type="checkbox" value="dm"> Dm</label>
+    <label><input type="checkbox" value="d7"> D7</label>
+    <label><input type="checkbox" value="em" checked> Em</label>
+    <label><input type="checkbox" value="e"> E</label>
+    <label><input type="checkbox" value="f"> F</label>
+    <label><input type="checkbox" value="g" checked> G</label>
+    <label><input type="checkbox" value="a"> A</label>
+    <label><input type="checkbox" value="am"> Am</label>
+    <label><input type="checkbox" value="a7"> A7</label>
+    <label><input type="checkbox" value="asus2" checked> Asus2</label>
+    <label><input type="checkbox" value="h7"> H7</label>
+    <label><input type="checkbox" value="hm"> Hm</label>
+</div>
+
+<button id="playButton"><span id="playText">Zufälligen Akkord Abspielen (a)</span></button>
+<button id="repeatButton"><span id="repeatText">Akkord Wiederholen (w)</span></button>
+<div class="chords">
+    <div class="chord chord1" id="chord1"><img src="" alt=""><span id="chord1Text">(1)</span></div>
+    <div class="chord chord2" id="chord2"><img src="" alt=""><span id="chord2Text">(2)</span></div>
+    <div class="chord chord3" id="chord3"><img src="" alt=""><span id="chord3Text">(3)</span></div>
+</div>
+<div id="result"></div>
+
+<audio id="audioPlayer"></audio>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
